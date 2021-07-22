@@ -1,9 +1,20 @@
 body{
     display: block;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.texto{
+    font-size: 1.5rem
 }
 
 .content{
     max-width: 90%;
+}
+
+main{
+    max-width: 90%;
+    margin: 0 auto;
 }
 
 #room header{
@@ -54,7 +65,7 @@ body{
 
 /* Formulario */
 
-#question-form{
+#question-form, .questions{
     max-width: 90%;
     margin: 0 auto;
 }
@@ -72,6 +83,7 @@ body{
     border: .2rem solid var(--grey-blue);
     padding: 1.6rem;
     border-radius: 0 .8rem .8rem .8rem;
+    margin-bottom: 1.6rem;
 }
 
 #question-form textarea{
@@ -85,8 +97,6 @@ body{
 #question-form form textarea::placeholder{
     color: var(--grey-blue);
 }
-
-
 
 #question-form form footer{
     display: flex;
@@ -121,3 +131,51 @@ body{
     height: 2rem;
 }
 
+
+/* Questions */
+
+/* .questions{
+    max-width: 90%;
+    margin: 0 auto;
+    overflow-x: hidden;
+} */
+.question-wrapper{
+    background: var(--light-blue);
+    margin-bottom: .8rem;
+    border-radius: 0 .8rem .8rem .8rem;
+    padding: 2.4rem;
+}
+
+/* .question-content .question-wrapper{
+    display: flex;
+    align-items: center;
+} */
+
+.question-content{
+    display: flex;
+    align-items: center;
+}
+
+.question-wrapper .question-content p{
+    margin-left: 1.6rem;
+}
+
+.question-wrapper .actions{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.question-wrapper .actions > a{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.question-wrapper .actions > a > img{
+    margin-right: .8rem;
+}
+
+.actions .check{
+    margin-right: 1.6rem;
+}
