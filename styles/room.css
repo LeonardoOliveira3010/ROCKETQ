@@ -146,19 +146,25 @@ main{
     padding: 2.4rem;
 }
 
-/* .question-content .question-wrapper{
+.question-content .question-wrapper{
     display: flex;
-    align-items: center;
-} */
+    align-items: flex-end;
+}
 
 .question-content{
     display: flex;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .question-wrapper .question-content p{
     margin-left: 1.6rem;
+    word-break: break-word;
+    display: flex;
+    align-items: center;
+    min-height: 5.5rem;
 }
+
+
 
 .question-wrapper .actions{
     display: flex;
@@ -178,4 +184,12 @@ main{
 
 .actions .check{
     margin-right: 1.6rem;
+}
+
+
+
+/* Questions read */
+
+.question-wrapper.read{
+    background: var(--grey-medium);
 }
