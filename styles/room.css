@@ -65,6 +65,10 @@ main{
 
 /* Formulario */
 
+#questions{
+    padding-bottom: 2rem;
+}
+
 #question-form, .questions{
     max-width: 90%;
     margin: 0 auto;

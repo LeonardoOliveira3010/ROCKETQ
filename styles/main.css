@@ -81,11 +81,25 @@ button > img,
     width: 2rem;
 }
 
+/* header*/
+
 button.outlined,
 .button.outlined{
     background: var(--white);
     color: var(--blue);
     border:  0.2rem solid var(--blue);
+}
+
+button.red,
+.button.red{
+    background-color: var(--red);
+    color: var(--white);
+}
+
+button.grey,
+.button.grey{
+    background-color: var(--grey-light);
+    color: var(--grey-dark);
 }
 
 .content header{
