@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!--Fontes-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="/styles/main.css">
+        <link rel="stylesheet" href="/styles/room.css">
+        <link rel="stylesheet" href="/styles/modal.css">
+        
+        <title>RocketQ - Perguntas e respostas</title>
+    </head>
+
+    <body>
+        <div class="content" id="room">
+            <header>
+                <a href="/home.html"><img src="/assets/Logo.svg" alt="Logo"></a>
+                
+                <div class="buttons">
+
+                    <div class="button outlined">
+                        <span>#323243</span>
+                        <img src="/assets/copy.svg" alt="copiar numero da sala">
+                    </div>
+
+                    <a href="#" class="button">
+                        <img src="/assets/users-white.svg" alt="Criar sala">
+                        <span>Criar Sala</span>
+                    </a>
+                </div>
+            </header>
+
+            <main>
+                <section id="question-form">
+                    <h2>Faça a sua pergunta</h2>
+                    <form>
+                        <label class="sr-only" for-id="question">O que você quer perguntar</label>
+                        <textarea name="question" id="question" placeholder="O que você quer perguntar?"></textarea>
+
+                        <footer>
+                            <div class="">
+                                <img src="/assets/lock.svg" alt="pergunta anonima">
+                                <span>Está pergunta é anonima</span>
+                            </div>
+
+                            <button class="button"> <img src="/assets/send.svg" alt=""> Enviar</button>
+                        </footer>
+                    </form>
+                </section>
+
+                <section id="questions">
+                    <h2 class="sr-only">Perguntas da comunidade</h2>
+                    <div class="questions">
+                        <div class="question-wrapper">
+                            <div class="question-content">
+                                <div class="user">
+                                    <img src="/assets/Avatar.svg" alt="">
+                                </div>
+                                <div class="question">
+                                    <p class="texto">Qual a diferença entre const, var e let no js?</p>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <a href="#" class="texto check"><img src="/assets/check 1.svg" alt="">Marcar como lida</a>
+                                <a href="#" class="texto delete"><img src="/assets/trash 1.svg" alt="">Excluir</a>
+                            </div>
+                        </div>
+
+                        <div class="question-wrapper">
+                            <div class="question-content">
+                                <div class="user">
+                                    <img src="/assets/Avatar.svg" alt="">
+                                </div>
+                                <div class="question">
+                                    <p class="texto">Qual a diferença entre const, var e let no js?</p>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <a href="#" class="texto check"><img src="/assets/check 1.svg" alt="">Marcar como lida</a>
+                                <a href="#" class="texto delete"><img src="/assets/trash 1.svg" alt="">Excluir</a>
+                            </div>
+                        </div>
+
+                        <div class="question-wrapper read">
+                            <div class="question-content">
+                                <div class="user">
+                                    <img src="/assets/Avatar.svg" alt="">
+                                </div>
+                                <div class="question">
+                                    <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore dicta dignissimos, omnis corporis quas maiores quia incidunt laudantium autem facere voluptates rerum neque minus, cupiditate dolores voluptatem. Dolorem, tempora dolores?</p>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <a href="#" class="texto check"><img src="/assets/check 1.svg" alt="" >Pergunta lida</a>
+                                <a href="#" class="texto delete"><img src="/assets/trash 1.svg" alt="">Excluir</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>    
+
+        <!-- <main>
+            <section id="question-form">
+                <h2>Faça a sua pergunta</h2>
+                <form>
+                    <label class="sr-only" for-id="question">O que você quer perguntar</label>
+                    <textarea name="question" id="question" placeholder="O que você quer perguntar?"></textarea>
+
+                    <footer>
+                        <div class="">
+                            <img src="/assets/lock.svg" alt="pergunta anonima">
+                            <span>Está pergunta é anonima</span>
+                        </div>
+
+                        <button class="button"> <img src="/assets/send.svg" alt=""> Enviar</button>
+                    </footer>
+                </form>
+            </section>
+
+            <section id="questions">
+                <h2 class="sr-only">Perguntas da comunidade</h2>
+                <div class="questions">
+                    <div class="question-wrapper">
+                        <div class="question-content">
+                            <div class="user">
+                                <img src="/assets/Avatar.svg" alt="">
+                            </div>
+                            <div class="question">
+                                <p class="texto">Qual a diferença entre const, var e let no js?</p>
+                            </div>
+                        </div>
+                        <div class="actions">
+                            <a href="#" class="texto check"><img src="/assets/check 1.svg" alt="">Marcar como lida</a>
+                            <a href="#" class="texto delete"><img src="/assets/trash 1.svg" alt="">Excluir</a>
+                        </div>
+                    </div>
+
+                    <div class="question-wrapper">
+                        <div class="question-content">
+                            <div class="user">
+                                <img src="/assets/Avatar.svg" alt="">
+                            </div>
+                            <div class="question">
+                                <p class="texto">Qual a diferença entre const, var e let no js?</p>
+                            </div>
+                        </div>
+                        <div class="actions">
+                            <a href="#" class="texto check"><img src="/assets/check 1.svg" alt="">Marcar como lida</a>
+                            <a href="#" class="texto delete"><img src="/assets/trash 1.svg" alt="">Excluir</a>
+                        </div>
+                    </div>
+
+                    <div class="question-wrapper read">
+                        <div class="question-content">
+                            <div class="user">
+                                <img src="/assets/Avatar.svg" alt="">
+                            </div>
+                            <div class="question">
+                                <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore dicta dignissimos, omnis corporis quas maiores quia incidunt laudantium autem facere voluptates rerum neque minus, cupiditate dolores voluptatem. Dolorem, tempora dolores?</p>
+                            </div>
+                        </div>
+                        <div class="actions">
+                            <a href="#" class="texto check"><img src="/assets/check 1.svg" alt="" >Pergunta lida</a>
+                            <a href="#" class="texto delete"><img src="/assets/trash 1.svg" alt="">Excluir</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main> -->
+        
+    
+        <div class="modal-wrapper">
+            <div class="modal">
+                <h2 class="texto">Excluir pergunta</h2>
+                <p class="texto">Tem certeza que deseja excluir essa pergunta?</p>
+                <form action="#">
+                    <label for-id="password" class="sr-only">Digite sua senha</label>
+                    <input type="password" name="password" id="password" placeholder="Digite a sua senha">
+
+                    <div class="buttons">
+                        <div class="button texto grey" >Cancelar</div>
+                        <button class="red">Sim, excluir</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+
+</html>
