@@ -198,3 +198,25 @@ main{
 .question-wrapper.read{
     background: var(--grey-medium);
 }
+
+
+/* display: flex;
+flex-direction: column;
+} 
+
+#bg {
+    grid-area: left;
+    background: url(/assets/background.svg) no-repeat top/contain;
+    height: 30rem;
+    width: 30rem
+    background-position-x: 0;
+}
+
+main h2 {
+color: var(--black);
+font-size: clamp(20px, 5vw, 2.8rem);
+margin-bottom: 2.4rem;
+text-align: center;
+
+
+*/

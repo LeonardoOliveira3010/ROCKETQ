@@ -29,13 +29,14 @@ const handleClick = (event, check = true) =>{
 /* ================================================================================== */
 
     // Formulario
-    const roomId = document.querySelector('#room-id')
-    roomId.dataset.id
+    const roomId = document.querySelector('#room-id').dataset.id
 
     const slug = check ? 'check' : 'delete'
 
+    const questionId = event.target.dataset.id
+
     const form = document.querySelector('.modal form')
-    form.setAttribute('action', `/room/${roomId}/:question/${slug}`)
+    form.setAttribute('action', `/room/${roomId}/${questionId}/${slug}`)
 
 /* ================================================================================== */
 

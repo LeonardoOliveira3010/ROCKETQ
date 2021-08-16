@@ -9,6 +9,10 @@ app.use(express.static('public'))
 app.set('view engine', 'ejs')
 app.set('views', path.join(__dirname, 'views'))
 
+// Configurando o middleware
+    // Pega o conteudo que vem do formulario e decodifica e passa para o controller
+app.use(express.urlencoded({extended: true}))
+
 app.use(route)
 
 
